@@ -283,6 +283,27 @@ textarea.in{width:100%;text-align:left;min-height:64px;resize:vertical;font-weig
 .email-grid .cap-l{margin-bottom:2px}
 .email-grid .cap-n{font-size:22px}
 .email-grid .in{width:100%;text-align:left;font-size:18px}
+.takeouts{border-left:4px solid var(--cyan)}
+.to-compare{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.to-c{background:var(--surface-2);border-radius:10px;padding:10px 12px}
+.to-n{display:flex;align-items:baseline;gap:8px;margin-top:2px;font-variant-numeric:tabular-nums}
+.to-before{font-size:15px;color:var(--ink-3);font-weight:600}
+.to-arrow{color:var(--ink-3)}
+.to-now{font-size:24px;font-weight:800;color:var(--ink)}
+.to-points{margin:0 0 0 18px;display:grid;gap:8px;font-size:13.5px;color:var(--ink-2);max-width:86ch}
+.to-points b{color:var(--ink)}
+.rec-round{border:1px solid var(--line);border-radius:12px;margin-top:14px;background:var(--surface)}
+.rec-round summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:14px 16px;border-radius:12px}
+.rec-round summary::-webkit-details-marker{display:none}
+.rec-round summary::before{content:"";width:8px;height:8px;border-right:2px solid var(--ink-2);border-bottom:2px solid var(--ink-2);transform:rotate(-45deg);margin-right:2px;transition:transform .15s;align-self:center}
+.rec-round[open] summary::before{transform:rotate(45deg)}
+.rec-round summary:hover{background:var(--surface-2)}
+.rr-t{font-weight:800;font-size:15px;color:var(--ink)}
+.rr-sub{font-size:12px;color:var(--ink-3)}
+.rr-body{padding:0 16px 16px}
+.rr-fb{background:var(--surface-2);border-radius:10px;padding:12px 14px;margin:4px 0 6px}
+@media (max-width:860px){.to-compare{grid-template-columns:repeat(2,1fr)}}
+@media print{.rec-round:not([open]) .rr-body{display:block}}
 footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
 
 @media (max-width:860px){
@@ -324,18 +345,18 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
 <script id="report-data" type="application/json">
 {
   "meta": {
-    "updated": "10 November 2026",
-    "period": "14 Oct – 9 Nov 2026",
+    "updated": "17 November 2026",
+    "period": "14 Oct – 17 Nov 2026",
     "status": "Registration open",
     "sample": false,
-    "note": "Live data from 14 Oct (go-live) to 9 Nov 2026, 23:56. Excludes test data."
+    "note": "Live data from 14 Oct (go-live) to 17 Nov 2026, 10:28. Excludes test data."
   },
   "kpi": {
-    "started": 128,
-    "registered": 10,
-    "existing": 1,
-    "optIn": 10,
-    "existingChats": 4,
+    "started": 365,
+    "registered": 160,
+    "existing": 20,
+    "optIn": 158,
+    "existingChats": 23,
     "baseSize": 9685
   },
   "weekly": [
@@ -356,13 +377,13 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
     },
     {
       "label": "4 – 10 Nov",
-      "n": 8,
+      "n": 9,
       "c": 4
     },
     {
       "label": "11 – 17 Nov",
-      "n": 0,
-      "c": 0
+      "n": 149,
+      "c": 237
     },
     {
       "label": "18 – 24 Nov",
@@ -394,69 +415,69 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "label": "Meta (Facebook & Instagram)*",
       "keyword": "UnileverProM",
       "kw": 1,
-      "told": 8,
-      "assumed": 79,
-      "n": 88,
+      "told": 156,
+      "assumed": 105,
+      "n": 262,
       "existing": 1,
-      "reg": 3
+      "reg": 116
     },
     {
       "label": "Email database",
       "keyword": "UnileverPRO",
-      "kw": 4,
-      "told": 2,
+      "kw": 14,
+      "told": 3,
       "assumed": 0,
-      "n": 6,
+      "n": 17,
       "existing": 0,
-      "reg": 2
+      "reg": 12
     },
     {
       "label": "LinkedIn",
       "keyword": "UnileverProLI",
       "kw": 9,
-      "told": 0,
+      "told": 1,
       "assumed": 0,
-      "n": 9,
+      "n": 10,
       "existing": 0,
       "reg": 0
     },
     {
       "label": "Unilever Professional website",
       "keyword": "UnileverProWeb",
-      "kw": 0,
-      "told": 0,
+      "kw": 15,
+      "told": 5,
       "assumed": 0,
-      "n": 0,
+      "n": 20,
       "existing": 0,
-      "reg": 0
+      "reg": 17
     },
     {
       "label": "TikTok",
       "keyword": "UnileverTikTok",
       "kw": 0,
-      "told": 1,
+      "told": 7,
       "assumed": 0,
-      "n": 1,
+      "n": 7,
       "existing": 0,
-      "reg": 0
+      "reg": 2
     },
     {
       "label": "Google / YouTube",
       "keyword": "UnileverGen",
       "kw": 0,
-      "told": 1,
+      "told": 3,
       "assumed": 0,
-      "n": 1,
+      "n": 3,
       "existing": 0,
-      "reg": 1
+      "reg": 2
     },
     {
       "label": "UPro Partner",
       "keyword": "",
       "kw": 0,
-      "told": 0,
+      "told": 2,
       "assumed": 0,
-      "n": 0,
+      "n": 2,
       "existing": 0,
       "reg": 0
     },
@@ -474,11 +495,11 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "label": "Other (told us 'Other')",
       "keyword": "",
       "kw": 0,
-      "told": 6,
+      "told": 20,
       "assumed": 0,
-      "n": 6,
+      "n": 20,
       "existing": 1,
-      "reg": 4
+      "reg": 11
     },
     {
       "label": "Unknown (did not use a keyword, received welcome/message & no response)",
@@ -486,75 +507,83 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "kw": 0,
       "told": 0,
       "assumed": 0,
-      "n": 16,
+      "n": 23,
       "existing": 2,
       "reg": 0
     }
   ],
   "businessTypes": [
     {
-      "label": "Restaurant",
-      "n": 2
-    },
-    {
-      "label": "Hotel / accommodation",
-      "n": 2
+      "label": "Cleaning & hygiene",
+      "n": 38
     },
     {
       "label": "Catering",
-      "n": 0
-    },
-    {
-      "label": "Cleaning & hygiene",
-      "n": 2
-    },
-    {
-      "label": "Laundry",
-      "n": 0
+      "n": 26
     },
     {
       "label": "Car wash",
-      "n": 1
+      "n": 12
     },
     {
-      "label": "Other (home maintenance, selling products, other)",
-      "n": 3
+      "label": "Restaurant / food",
+      "n": 10
+    },
+    {
+      "label": "Hotel / accommodation",
+      "n": 6
+    },
+    {
+      "label": "Laundry",
+      "n": 6
+    },
+    {
+      "label": "Other (e.g. salons, retail, daycare, home industry)",
+      "n": 62
     }
   ],
   "sizes": [
     {
       "label": "1 – 10 employees",
-      "n": 8
+      "n": 134
     },
     {
       "label": "11 – 50 employees",
-      "n": 2
+      "n": 17
     },
     {
       "label": "50+ employees",
-      "n": 0
+      "n": 4
+    },
+    {
+      "label": "No clear answer",
+      "n": 5
     }
   ],
   "drivers": [
     {
       "label": "Product performance & reliability",
-      "n": 8
+      "n": 87
     },
     {
       "label": "Price / value for money",
-      "n": 1
-    },
-    {
-      "label": "Availability / never out of stock",
-      "n": 1
+      "n": 28
     },
     {
       "label": "Trusted, well-known brand",
-      "n": 0
+      "n": 19
+    },
+    {
+      "label": "Availability / never out of stock",
+      "n": 13
     },
     {
       "label": "Right pack size",
-      "n": 0
+      "n": 6
+    },
+    {
+      "label": "Other / no clear answer",
+      "n": 7
     }
   ],
   "winners": [
@@ -596,8 +625,8 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
         "impr": 0,
         "clicks": 0,
         "ctrKpi": 1.3,
-        "chats": 88,
-        "reg": 3
+        "chats": 262,
+        "reg": 116
       },
       {
         "label": "LinkedIn",
@@ -608,7 +637,7 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
         "impr": 0,
         "clicks": 0,
         "ctrKpi": 0.8,
-        "chats": 9,
+        "chats": 10,
         "reg": 0
       },
       {
@@ -620,8 +649,8 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
         "impr": 0,
         "clicks": 0,
         "ctrKpi": 0,
-        "chats": 1,
-        "reg": 1
+        "chats": 3,
+        "reg": 2
       },
       {
         "label": "TikTok",
@@ -632,8 +661,8 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
         "impr": 0,
         "clicks": 0,
         "ctrKpi": 0,
-        "chats": 1,
-        "reg": 0
+        "chats": 7,
+        "reg": 2
       },
       {
         "label": "UPro Partner",
@@ -644,7 +673,7 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
         "impr": 0,
         "clicks": 0,
         "ctrKpi": 0,
-        "chats": 0,
+        "chats": 2,
         "reg": 0
       },
       {
@@ -665,12 +694,12 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "sent": 0,
       "opens": 0,
       "clicks": 0,
-      "reg": 2,
-      "chats": 6
+      "reg": 12,
+      "chats": 17
     },
     "web": {
-      "chats": 0,
-      "reg": 0
+      "chats": 20,
+      "reg": 17
     }
   },
   "kpis": [
@@ -678,15 +707,15 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "group": "Registrations",
       "label": "Phase 1 registrations (14 Oct – 30 Nov)",
       "target": 630,
-      "actual": 10,
+      "actual": 160,
       "unit": "",
       "mode": "progress"
     },
     {
       "group": "Registrations",
-      "label": "On pace for Phase 1 by 9 Nov",
-      "target": 341,
-      "actual": 10,
+      "label": "On pace for Phase 1 by 17 Nov",
+      "target": 446,
+      "actual": 160,
       "unit": "",
       "mode": "pace"
     },
@@ -694,7 +723,7 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "group": "Registrations",
       "label": "Cumulative by 31 Dec 2026",
       "target": 1400,
-      "actual": 10,
+      "actual": 160,
       "unit": "",
       "mode": "progress"
     },
@@ -702,7 +731,7 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "group": "Registrations",
       "label": "Cumulative by mid-April 2027 (2 350 with no Jan–Apr offer)",
       "target": 3500,
-      "actual": 10,
+      "actual": 160,
       "unit": "",
       "mode": "progress"
     },
@@ -717,12 +746,86 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
   ],
   "recs": [
     {
+      "round": "17 Nov",
+      "priority": "Ongoing",
+      "title": "Reminders to people who started but didn't finish",
+      "owner": "Berelo",
+      "detail": "Weekly reminders continue, based on the step where people stopped.",
+      "subTitle": "Next steps",
+      "subDetail": "Send a final 'last chance to enter' reminder in the week of 24 Nov to everyone who started but hasn't finished, before registration closes on 30 Nov."
+    },
+    {
+      "round": "17 Nov",
+      "priority": "Content messaging",
+      "title": "Keep the prize-first November ads running to close",
+      "owner": "Attic Rush",
+      "detail": "The November ads that lead with the prize are driving the uptake. Since they went live on 13 Nov, 144 people have opened WhatsApp with \"How do I register for the giveaway?\" and 93 have registered. Keep these running until registration closes on 30 Nov."
+    },
+    {
+      "round": "17 Nov",
+      "priority": "Content messaging",
+      "title": "UPro to approve Attic Rush's 2-week prize-only push on Meta",
+      "owner": "UPro",
+      "detail": "Attic Rush has proposed assets that only communicate the prize and WhatsApp registration, pushed on Meta for the final 2 weeks alongside the always-on campaign. This needs UPro's approval.",
+      "points": [
+        "Once UPro approves, Attic Rush will prepare the cost estimate.",
+        "Aim to have the assets live by 20 Nov, so they run for the full final stretch to 30 Nov."
+      ]
+    },
+    {
+      "round": "17 Nov",
+      "priority": "Channel recommendations",
+      "channel": "Meta",
+      "title": "Fund the prize-only push without touching always-on",
+      "owner": "Unilever + Attic Rush",
+      "detail": "Meta has brought 262 chats and 116 registrations. As always-on has to continue, we're no longer recommending moving the full budget to Meta. If UPro approves the prize-only push, it could be funded from LinkedIn's remaining November budget (see below) or a small top-up."
+    },
+    {
+      "round": "17 Nov",
+      "priority": "Channel recommendations",
+      "channel": "LinkedIn",
+      "title": "Move LinkedIn's remaining November budget into the prize-only push",
+      "owner": "Attic Rush",
+      "detail": "LinkedIn has brought 10 chats and no registrations. If the prize-only push is approved, LinkedIn's remaining November spend would work harder behind it for the final 2 weeks."
+    },
+    {
+      "round": "17 Nov",
+      "priority": "Channel recommendations",
+      "channel": "Email",
+      "title": "Send a last-chance email to the existing database",
+      "owner": "Attic Rush",
+      "detail": "Email is working: 17 chats and 12 registrations, and 20 businesses from the existing database have registered (up from 1). Schedule a final send around 24 Nov with the prize in the subject line and a WhatsApp button, and add the WhatsApp link to the email footer."
+    },
+    {
+      "round": "17 Nov",
+      "priority": "Channel recommendations",
+      "channel": "Website",
+      "title": "Keep the website WhatsApp link prominent until 30 Nov",
+      "owner": "Unilever",
+      "detail": "The website has converted best of all: 20 chats and 17 registrations since 11 Nov. Keep the competition banner and WhatsApp link on the homepage until registration closes."
+    },
+    {
+      "round": "17 Nov",
+      "priority": "Additional channels",
+      "title": "Launch new channels only if they can go live by 24 Nov",
+      "owner": "Attic Rush",
+      "detail": "With 2 weeks left, Google Demand Gen, UPro Partner and SA Chefs will only add registrations if they're live by around 24 Nov. If not, hold them for 1 Dec, when the R50 coupon offer is communicated."
+    },
+    {
+      "round": "17 Nov",
+      "priority": "Draw preparation",
+      "title": "Verify entries before the draw",
+      "owner": "Berelo",
+      "detail": "The draw takes place between 1 and 7 Dec. A few registrants said they don't operate a business, so entries will be checked against the Ts & Cs eligibility rules (trade businesses only) before winners and reserves are drawn."
+    },
+    {
       "priority": "Ongoing",
       "title": "Reminders to people who started but didn't finish",
       "detail": "Actioned: sent on 9 Nov at 12:00 to 114 people who had started registering but not finished. Registrations are already coming in.",
       "owner": "Berelo",
       "subTitle": "Next steps",
-      "subDetail": "Continue sending reminders weekly to people who drop off, based on the step where they stopped (see Where people drop off on the Channel attribution tab)."
+      "subDetail": "Continue sending reminders weekly to people who drop off, based on the step where they stopped (see Where people drop off on the Channel attribution tab).",
+      "round": "10 Nov"
     },
     {
       "priority": "Content messaging",
@@ -775,21 +878,24 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
           "good": "The prize strip is on the image.",
           "change": "The headline (\"Is Your Kitchen Ready for More Demand?\") and opening line (\"93% of consumers…\") don't mention the prize, and there's no WhatsApp link or call to action visible. Open with the prize and the WhatsApp link (UnileverProLI), and change the headline to \"Win 1 of 5 R1 000 Takealot coupons: register on WhatsApp\"."
         }
-      ]
+      ],
+      "round": "10 Nov"
     },
     {
       "priority": "Channel recommendations",
       "title": "Reallocate budget to Meta",
       "detail": "Meta is bringing in the most leads: 88 chats and 3 registrations, against LinkedIn's 9 chats and no registrations on R9 900 of the R16 390 current spend. Reallocate spend from LinkedIn to Meta, and consider moving the Meta ads to a lead form, which usually gets better results.",
       "owner": "Unilever + Attic Rush",
-      "channel": "Meta"
+      "channel": "Meta",
+      "round": "10 Nov"
     },
     {
       "priority": "Channel recommendations",
       "title": "Change the Meta ads to use the UnileverProM keyword",
       "detail": "97 chats opened with \"How do I register my business to enter?\" instead of a keyword. We've assumed these came from Meta ads, which pre-fill that message. Attic Rush to confirm this on their side. Change the pre-filled text to UnileverProM so Meta leads are tracked exactly.",
       "owner": "Attic Rush + Berelo",
-      "channel": "Meta"
+      "channel": "Meta",
+      "round": "10 Nov"
     },
     {
       "priority": "Channel recommendations",
@@ -800,14 +906,16 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "points": [
         "First choice: reallocate the TikTok budget to Meta, which is already bringing in the most leads.",
         "If TikTok goes ahead: use a dark post rather than an in-feed post. Dark posts tend to perform better, and because TikTok isn't a Meta platform, boosting an in-feed post doesn't give a direct route into WhatsApp. Use the UnileverTikTok keyword."
-      ]
+      ],
+      "round": "10 Nov"
     },
     {
       "priority": "Channel recommendations",
       "channel": "Email",
       "title": "Confirm the email registration drive",
       "owner": "Attic Rush",
-      "detail": "Attic Rush to confirm whether the registration email has been sent to the existing database, and when. If it has, schedule reminder sends to people who haven't registered. So far 4 people from the existing database have opened a chat and 1 has registered."
+      "detail": "Attic Rush to confirm whether the registration email has been sent to the existing database, and when. If it has, schedule reminder sends to people who haven't registered. So far 4 people from the existing database have opened a chat and 1 has registered.",
+      "round": "10 Nov"
     },
     {
       "priority": "Channel recommendations",
@@ -817,7 +925,8 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "image": "email-footer",
       "imageAlt": "Current Unilever Professional email footer: brand logos, 'Visit UPRO | Contact Us', address, unsubscribe text and Instagram, Facebook and LinkedIn icons, with no WhatsApp link",
       "imageCaption": "Current email footer: no WhatsApp link",
-      "channel": "Email"
+      "channel": "Email",
+      "round": "10 Nov"
     },
     {
       "priority": "Channel recommendations",
@@ -828,7 +937,8 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "link": {
         "text": "Open the performance stats tracker",
         "url": "https://bereloza-my.sharepoint.com/:x:/g/personal/dan_berelo_com/IQAK3TBCTxbCQJDSCBN3ihv0AVpKBww4OJqAGhbyIQMol5U?e=ddx3LE"
-      }
+      },
+      "round": "10 Nov"
     },
     {
       "priority": "Additional channels",
@@ -838,7 +948,8 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       "points": [
         "Confirm the go-live date for each channel.",
         "Share all content with Berelo for review before it goes live, so we can check and confirm the messaging follows the Content messaging recommendation: the prize leads, registering on WhatsApp is the only call to action, and the link carries the channel's keyword."
-      ]
+      ],
+      "round": "10 Nov"
     }
   ],
   "dropoff": {
@@ -846,55 +957,55 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       {
         "label": "Started a chat",
         "hint": "Sent a first message to the WhatsApp line",
-        "n": 128
+        "n": 365
       },
       {
         "label": "Received a bot message",
         "hint": "Welcome message, or the 9 Nov message asking them to complete registration",
-        "n": 111
+        "n": 354
       },
       {
         "label": "Engaged after welcome / bot message",
         "hint": "Responded to the bot",
-        "n": 53
+        "n": 235
       },
       {
         "label": "Reached the 18+ check",
         "hint": "Continued past the welcome message",
-        "n": 21
+        "n": 215
       },
       {
         "label": "Confirmed they're 18 or older",
         "hint": "Step 1",
-        "n": 19
+        "n": 212
       },
       {
         "label": "Accepted the T&Cs",
         "hint": "Step 1",
-        "n": 12
+        "n": 190
       },
       {
         "label": "Answered the marketing opt-in",
         "hint": "Step 2",
-        "n": 11
+        "n": 186
       },
       {
-        "label": "Gave name and email",
-        "hint": "Step 3",
-        "n": 10
+        "label": "Reached the business questions",
+        "hint": "Gave name and email (Step 3)",
+        "n": 180
       },
       {
         "label": "Registered",
         "hint": "Answered the business questions and entered the draw",
-        "n": 10
+        "n": 160
       }
     ],
     "welcomes": [
       {
         "label": "Existing database",
         "who": "Their number is already on the Unilever Professional database",
-        "n": 3,
-        "cont": 1,
+        "n": 23,
+        "cont": 21,
         "text": "👋 Welcome back to Unilever Professional.\nWe've found your details — confirm them below for your chance to win 1 of 5 R1 000 Takealot coupons, plus stay updated on our offers, launches and cleaning tips.",
         "buttons": [
           "Yes, that's right"
@@ -904,8 +1015,8 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       {
         "label": "New users",
         "who": "Opened the chat with a campaign keyword",
-        "n": 10,
-        "cont": 2,
+        "n": 23,
+        "cont": 15,
         "text": "👋 Welcome to Unilever Professional.\nWe provide professional cleaning solutions to help businesses maintain high standards and keep operations running smoothly.\nRegister now for your chance to win 1 of 5 R1 000 Takealot coupons, plus stay updated on our latest offers, new product launches and cleaning tips.\nTap below to get started.",
         "buttons": [
           "Start"
@@ -915,8 +1026,8 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       {
         "label": "No keyword",
         "who": "Opened the chat without a campaign keyword",
-        "n": 40,
-        "cont": 18,
+        "n": 260,
+        "cont": 191,
         "text": "Welcome to Unilever Professional!\n\nBefore we continue, please let us know where you heard about us.",
         "buttons": [
           "Facebook",
@@ -931,6 +1042,61 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
         ],
         "then": "After answering, they receive the new or existing users welcome message."
       }
+    ]
+  },
+  "recRounds": [
+    {
+      "id": "17 Nov",
+      "title": "17 Nov recommendations",
+      "sub": "Updated after this week's uptake and Attic Rush's feedback",
+      "open": true,
+      "feedback": {
+        "from": "Attic Rush update on the 10 Nov recommendations",
+        "points": [
+          "October always-on assets were briefed to keep the always-on messaging and add the WhatsApp comms, which is why the prize wasn't the first thing people saw.",
+          "November assets were changed to put the prize first, while still communicating the Q4 campaign.",
+          "The budget can't all move to Meta, as there's still an always-on job to do.",
+          "Attic Rush's proposal, which needs UPro's approval: create assets that only communicate the prize and WhatsApp registration, and push them on Meta for 2 weeks. Attic Rush will prepare the cost estimate once approved."
+        ]
+      }
+    },
+    {
+      "id": "10 Nov",
+      "title": "10 Nov recommendations",
+      "sub": "As shared on 10 Nov",
+      "open": false
+    }
+  ],
+  "takeouts": {
+    "since": "10 Nov report (data to 9 Nov)",
+    "compare": [
+      {
+        "label": "Chats started",
+        "before": 128,
+        "now": 365
+      },
+      {
+        "label": "Registrations",
+        "before": 10,
+        "now": 160
+      },
+      {
+        "label": "Chats that registered",
+        "before": "8%",
+        "now": "44%"
+      },
+      {
+        "label": "Existing database registered",
+        "before": 1,
+        "now": 20
+      }
+    ],
+    "points": [
+      "<b>Registrations grew from 10 to 160 in a week.</b> 149 people registered between 11 and 17 Nov, around 30 a day since the new November ads went live on 13 Nov.",
+      "<b>The prize-first November Meta ads are driving the uptake.</b> 144 people opened WhatsApp with \"How do I register for the giveaway?\" and 93 registered. Meta now accounts for 262 chats and 116 registrations.",
+      "<b>The website and email are now delivering.</b> The website brought 20 chats and 17 registrations, and email 17 chats and 12 registrations. 20 businesses from the existing database have registered, up from 1.",
+      "<b>Once people are in the journey, most finish:</b> 84% of those who accept the T&amp;Cs go on to register.",
+      "<b>LinkedIn still hasn't produced a registration</b> (10 chats)."
     ]
   }
 }
@@ -969,11 +1135,12 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
     <button class="btn edit-only" onclick="cancelEdit()">Cancel</button>
     <span class="edit-badge">Editing: charts update as you type</span>
     <span class="spacer"></span>
+    <button class="btn ghost view-only" onclick="clearAll()">Clear all figures</button>
     <button class="btn ghost view-only" onclick="window.print()">Print / PDF</button>
     <button class="btn view-only" onclick="downloadReport()">Download updated report</button>
   </div>
   <p class="data-note"><span class="t" data-t="meta.note"></span><input class="in in-text" data-path="meta.note" data-kind="text" aria-label="Data note"></p>
-  <div class="sample-note" id="sampleNote">These are sample figures to show how the report reads. Select Edit figures to enter live numbers,.</div>
+  <div class="sample-note" id="sampleNote">These are sample figures to show how the report reads. Select Edit figures to enter live numbers, or Clear all figures to start from blank.</div>
 
   <!-- TABS -->
   <div class="tabs" role="tablist">
@@ -987,6 +1154,12 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
 
   <!-- OVERVIEW -->
   <section id="tab-overview" class="section visible">
+    <div class="card takeouts" style="margin-bottom:14px">
+      <h3>Key takeouts since the last report</h3>
+      <div class="sub" id="toSince"></div>
+      <div class="to-compare" id="toCompare"></div>
+      <ul class="to-points" id="toPoints"></ul>
+    </div>
     <div class="card" style="margin-bottom:14px">
       <h3>Registrations by week</h3>
       <div class="sub">Completed registrations per week, against chats started on the WhatsApp line</div>
@@ -1009,7 +1182,7 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       <div class="sub">Where each chat came from: the keyword they used, or, without a keyword, what they told the bot when asked where they heard about us</div>
       <div class="table-wrap"><table class="tbl"><thead><tr><th>Channel</th><th>Keyword</th><th class="num">Traffic (unique chats started)</th><th class="num">Registered</th></tr></thead><tbody id="sourceBody"></tbody><tfoot><tr class="tot"><td>Total</td><td></td><td class="num" id="srcTotN"></td><td class="num" id="srcTotR"></td></tr></tfoot></table></div>
       <div class="check" id="sourceCheck"></div>
-      <p class="note">* 97 chats opened with "How do I register my business to enter?" instead of a keyword. Where these people didn't tell us where they heard about us (79 chats), we've assumed they came from Meta ads, which pre-fill that message. The other 18 are counted under the source they named.</p>
+      <p class="note">* 288 chats opened with a pre-filled question such as "How do I register for the giveaway?", "How do I register my business to enter?" or "Can I get a sample of your dishwashing liquid?" instead of a keyword. Where these people didn't tell us where they heard about us (105 chats), we've assumed they came from Meta ads, which pre-fill these questions. The other 183 are counted under the source they named.</p>
     </div>
     <div class="card" style="margin-bottom:14px">
       <h3>Where people drop off</h3>
@@ -1077,12 +1250,12 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
       <h3>Paid social by channel</h3>
       <div class="sub">Run by Attic Rush. Period: <span class="t" data-t="paid.period"></span><input class="in in-text" data-path="paid.period" data-kind="text" style="width:160px" aria-label="Paid period">. CTR, CPM and cost per registration calculate automatically</div>
       <div class="table-wrap"><table class="tbl"><thead><tr><th>Channel</th><th>Status</th><th class="num">Budget</th><th class="num">Spend</th><th class="num">Impr.</th><th class="num">Clicks</th><th class="num">CTR</th><th class="num">Target CTR</th><th class="num">CPM</th><th class="num">Chats</th><th class="num">Registered</th><th class="num">Cost / reg</th></tr></thead><tbody id="paidBody"></tbody></table></div>
-      <p class="note">Chats and registrations match the Channel attribution tab: keyword, plus what people told us. Meta includes 79 chats assumed to come from Meta ads because they opened with the pre-filled "How do I register my business to enter?" message. Meta budget is R5 170 Facebook plus R1 320 Instagram. Google Demand Gen, TikTok, UPro Partner and SA Chefs are new channels; go-live dates to be confirmed by Attic Rush.</p>
+      <p class="note">Chats and registrations match the Channel attribution tab: keyword, plus what people told us. Meta includes 105 chats assumed to come from Meta ads because they opened with a pre-filled question such as "How do I register for the giveaway?". Meta budget is R5 170 Facebook plus R1 320 Instagram. Google Demand Gen, TikTok, UPro Partner and SA Chefs are new channels; go-live dates to be confirmed by Attic Rush.</p>
     </div>
     <h2 class="sec-h">KPIs</h2>
     <div class="card">
       <h3>Targets against actuals</h3>
-      <div class="sub">Targets from the U-Pro six-month view (30 Oct 2026). Actuals to 9 Nov 2026</div>
+      <div class="sub">Targets from the U-Pro six-month view (30 Oct 2026). Actuals to 17 Nov 2026</div>
       <div class="table-wrap"><table class="tbl"><thead><tr><th>KPI</th><th class="num">Target</th><th class="num">Actual</th><th style="width:22%">Progress</th><th>Status</th></tr></thead><tbody id="kpiBody"></tbody></table></div>
     </div>
   </section>
@@ -1117,7 +1290,7 @@ footer{margin-top:2rem;font-size:12px;color:var(--ink-3);text-align:center}
   <section id="tab-recs" class="section">
     <div class="card">
       <h3>Recommendations</h3>
-      <div class="sub">What has been actioned, and what we suggest next for content and channels</div>
+      <div class="sub">Open a set of recommendations to see it. The latest is open by default</div>
       <div id="recList"></div>
     </div>
   </section>
@@ -1192,6 +1365,7 @@ function render() {
 
 
   renderExtra();
+  renderTakeouts();
   renderDrop();
   renderTimeline();
   fillInputs();
@@ -1311,11 +1485,11 @@ function renderExtra() {
   });
   $('kpiBody').innerHTML = kh;
 
-  const groups = ['Ongoing', 'Content messaging', 'Channel recommendations', 'Additional channels'], cls = { 'Ongoing': 'info', 'Content messaging': 'navy', 'Channel recommendations': 'navy', 'Additional channels': 'navy' },
-        hint = { 'Ongoing': 'Actioned and continuing', 'Content messaging': 'Ad copy and creative', 'Channel recommendations': 'By channel', 'Additional channels': 'Before go-live' },
-        chOrder = ['Meta', 'TikTok', 'Email', 'Reporting'];
-  $('recList').innerHTML = groups.map(g => {
-    const items = DATA.recs.map((r, i) => ({ r, i })).filter(x => x.r.priority === g)
+  const groups = ['Ongoing', 'Content messaging', 'Channel recommendations', 'Additional channels', 'Draw preparation'], cls = { 'Ongoing': 'info', 'Content messaging': 'navy', 'Channel recommendations': 'navy', 'Additional channels': 'navy', 'Draw preparation': 'navy' },
+        hint = { 'Ongoing': 'Actioned and continuing', 'Content messaging': 'Ad copy and creative', 'Channel recommendations': 'By channel', 'Additional channels': 'Before go-live', 'Draw preparation': '1 – 7 Dec' },
+        chOrder = ['Meta', 'LinkedIn', 'TikTok', 'Email', 'Website', 'Reporting'];
+  const roundHtml = round => groups.map(g => {
+    const items = DATA.recs.map((r, i) => ({ r, i })).filter(x => x.r.priority === g && (round === undefined || x.r.round === round))
       .sort((x, y) => (chOrder.indexOf(x.r.channel) - chOrder.indexOf(y.r.channel)) || (x.i - y.i));
     let lastCh = null;
     if (!items.length) return '';
@@ -1338,6 +1512,10 @@ function renderExtra() {
         </div>`).join('')}</div></div>` : ''}
       </div>`; }).join('') + '</div>';
   }).join('');
+  $('recList').innerHTML = (DATA.recRounds || [{ id: undefined, title: '', open: true }]).map(R => `<details class="rec-round"${R.open ? ' open' : ''}>
+    <summary><span class="rr-t">${esc(R.title)}</span><span class="rr-sub">${esc(R.sub || '')}</span></summary>
+    <div class="rr-body">${R.feedback ? `<div class="rr-fb"><div class="rec-sub-t">${esc(R.feedback.from)}</div><ul class="rec-points">${R.feedback.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div>` : ''}${roundHtml(R.id)}</div>
+  </details>`).join('');
 }
 function fmtK(v, unit) { if (v === null || v === undefined || v === '') return '—'; return unit === '%' ? `${v}%` : fmt(v); }
 function refreshExtra() {
@@ -1403,6 +1581,13 @@ function refreshDrop() {
     <li><b>Once people accept the T&amp;Cs, most finish:</b> ${fmt(reg)} of ${fmt(tcs)} (${pctTxt(reg, tcs)}) went on to register.</li>
   </ul>`;
 }
+function renderTakeouts() {
+  const T = DATA.takeouts; if (!T) return;
+  $('toSince').textContent = 'Compared with the ' + T.since;
+  $('toCompare').innerHTML = T.compare.map(c => `<div class="to-c"><div class="cap-l">${esc(c.label)}</div><div class="to-n"><span class="to-before">${esc(fmtV(c.before))}</span><span class="to-arrow" aria-hidden="true">→</span><span class="to-now">${esc(fmtV(c.now))}</span></div></div>`).join('');
+  $('toPoints').innerHTML = T.points.map(p => `<li>${p}</li>`).join('');
+}
+function fmtV(v) { return typeof v === 'number' ? fmt(v) : v; }
 /* ── charts ── */
 let charts = {};
 function palette() { return ['--c1', '--c2', '--c3', '--c4', '--c5', '--c6'].map(cssVar); }
@@ -1490,6 +1675,18 @@ function saveEdit() {
   document.body.classList.remove('edit-mode'); snapshot = null; refresh();
 }
 function cancelEdit() { DATA = snapshot || DATA; snapshot = null; document.body.classList.remove('edit-mode'); render(); refresh(); }
+function clearAll() {
+  if (!confirm('Clear every figure and winner name? Labels and dates stay.')) return;
+  const zero = o => { for (const k in o) { if (typeof o[k] === 'number' && k !== 'cap') o[k] = 0; else if (o[k] && typeof o[k] === 'object') zero(o[k]); } };
+  const keep = structuredClone(DATA.kpis.map(k => k.target)), budgets = DATA.paid.channels.map(c => [c.budget, c.ctrKpi]), base = n('kpi.baseSize'), eb = DATA.paid.email.base;
+  zero(DATA);
+  DATA.kpis.forEach((k, i) => { k.target = keep[i]; k.actual = null; });
+  DATA.paid.channels.forEach((c, i) => { c.budget = budgets[i][0]; c.ctrKpi = budgets[i][1]; });
+  DATA.kpi.baseSize = base; DATA.paid.email.base = eb;
+  DATA.winners.forEach(w => { w.business = ''; w.segment = ''; w.status = 'Awaiting draw'; });
+  DATA.meta.sample = false; DATA.meta.period = '—'; DATA.meta.status = 'Registration open';
+  render(); refresh();
+}
 function downloadReport() {
   const open = '<script id="report-data" type="application/json">', close = '<' + '/script>';
   const a = SRC.indexOf(open), b = SRC.indexOf(close, a);
